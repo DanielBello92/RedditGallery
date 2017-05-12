@@ -1,0 +1,109 @@
+.App-Layout {
+
+}
+
+.SearchComponent{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.searchTextBox{
+    width: 50%;
+    height: 30%;
+    font-size: x-large;
+}
+
+.searchButton{
+    height: 33px;
+}
+.imageAndPageingLayout{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}
+.imageTableBoxs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    width: 148px;
+    height: 148px;
+    margin: 10px;
+    border : 4px solid black;
+    border-radius : 19px;
+}
+.pageingButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.show-Button{
+   display : block;
+}
+.hidden-Button {
+    display: none;
+}
+
+
+.active{
+    margin-top: 4px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    width: 37px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    line-height: 37px;
+    color: black;
+    box-shadow: inset 0 1px 0 grey;
+    text-decoration: underline;
+}
+.active:hover{
+    border: 3px solid black;
+    background-color:dimgray;
+    color: white;
+}
+
+.not-active{
+    margin-top: 4px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    width: 37px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    line-height: 37px;
+    color: black;
+    box-shadow: inset 0 1px 0 grey;
+
+}
+
+.not-active:hover{
+    background-color:dimgray;
+    border: 3px solid black;
+    color: white;
+}
+
+.show-Button{
+    height: 45px;
+    border-radius: 15px;
+    text-align: center;
+    width: 45px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    line-height: 45px;
+    color: black;
+    box-shadow: inset 0 1px 0 grey;
+
+}
+
+.show-Button:hover{
+    border: 4px solid black;
+    background-color:dimgray;
+    color: white;
+
+}
