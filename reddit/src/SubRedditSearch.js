@@ -15,7 +15,7 @@ class SubRedditSearch extends Component {
 
     render() {
 
-        console.log("SubRedditSearch in!")
+        // console.log("SubRedditSearch in!")
 
         let reddit = window.reddit
 

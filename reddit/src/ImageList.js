@@ -28,8 +28,8 @@ class ImageList extends Component {
 
 
     render() {
-        console.log("In ImageList !")
-        console.log(this.props.imagesList)
+        // console.log("In ImageList !")
+        // console.log(this.props.imagesList)
 
         return (
             <div className="imageAndPageingLayout">
@@ -38,7 +38,8 @@ class ImageList extends Component {
                         if(index >= (this.props.pageNumber)*(this.props.numOfImagesPerPage) && index < (this.props.pageNumber+1)*(this.props.numOfImagesPerPage)){
                             return(
                                     <a  key={index} href={ "https://www.reddit.com"+ image.data.permalink} target="_blank">
-                                        <img className="image" src={image.data.thumbnail} key={index} data-tip data-for={'image-tooltip'+index}/>
+                                        <img className="image" src={(image.data.thumbnail)? image.data.thumbnail : "http://www.bizexpert.in/supercat/noimagefound.png"}
+                                             key={index} data-tip data-for={'image-tooltip'+index}/>
                                         <ReactTooltip id={'image-tooltip'+index} type='info' place="top">
                                             <span>{image.data.title}</span>
                                         </ReactTooltip>
